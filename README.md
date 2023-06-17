@@ -32,10 +32,28 @@ This is a port of [Eamon Nerbonne's original solution](https://github.com/EamonN
 
 ## 💾 Installation
 
-You can install the package with [Composer](https://getcomposer.org/) using the following command:
+As the original maintainer appears to have abandoned the project, its a manual install I'm afraid, unless I publish this on packagist.
+
+Add the following to your projects `composer.json`:
+
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/othyn/php-indefinite-article.git"
+        }
+    ],
+    "require": {
+        "imliam/php-indefinite-article": "dev-php8"
+    }
+}
+```
+
+Then run the following command so that Composer can pull the package and update your lockfile:
 
 ```bash
-composer require imliam/php-indefinite-article:^1.0.0
+composer update
 ```
 
 ## 📝 Usage
